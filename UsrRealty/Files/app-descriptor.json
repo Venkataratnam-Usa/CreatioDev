@@ -1,0 +1,22 @@
+{
+  "Name": "Realty",
+  "Description": "",
+  "Maintainer": "Customer",
+  "Icon": "PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMwIDE3Ljg4MjNMMTMuNzgxMyAyMS41MTY4TDE4Ljk3MDkgMTcuODg0NEwyIDkuNjcxODhMMzAgMTcuODgyM1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0zMCAxNy44ODIzTDE4Ljk1ODYgMTcuODgyM0wyIDkuNjcxODhMMzAgMTcuODgyM1oiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=",
+  "IconName": "icon_151.svg",
+  "Color": "#22AC14",
+  "Version": "1.0.0",
+  "RequiredPlatformVersion": "8.2.3",
+  "MarketplaceLink": "",
+  "HelpLink": "",
+  "OrderLink": "",
+  "SupportEmail": "",
+  "DependsOn": [],
+  "Code": "UsrRealty",
+  "Packages": [
+    {
+      "UId": "08453003-7f4b-42ce-92e9-0abdb021c1a4",
+      "Name": "UsrRealty"
+    }
+  ]
+}
