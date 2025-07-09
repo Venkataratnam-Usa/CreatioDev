@@ -451,13 +451,13 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="CrtNextStep">
-			<HintPath>$(RelativePkgFolderPath)/CrtNextStep/$(StandalonePackageAssemblyPath)/CrtNextStep.dll</HintPath>
+		<Reference Include="FeatureToggling">
+			<HintPath>$(RelativePkgFolderPath)/FeatureToggling/$(StandalonePackageAssemblyPath)/FeatureToggling.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="FeatureToggling">
-			<HintPath>$(RelativePkgFolderPath)/FeatureToggling/$(StandalonePackageAssemblyPath)/FeatureToggling.dll</HintPath>
+		<Reference Include="CrtNextStep">
+			<HintPath>$(RelativePkgFolderPath)/CrtNextStep/$(StandalonePackageAssemblyPath)/CrtNextStep.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
@@ -516,18 +516,13 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="CrtCustomer360Mobile">
-			<HintPath>$(RelativePkgFolderPath)/CrtCustomer360Mobile/$(StandalonePackageAssemblyPath)/CrtCustomer360Mobile.dll</HintPath>
-			<SpecificVersion>False</SpecificVersion>
-			<Private>False</Private>
-		</Reference>
 		<Reference Include="CrtCall">
 			<HintPath>$(RelativePkgFolderPath)/CrtCall/$(StandalonePackageAssemblyPath)/CrtCall.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="CrtCopilotIntentsStudio">
-			<HintPath>$(RelativePkgFolderPath)/CrtCopilotIntentsStudio/$(StandalonePackageAssemblyPath)/CrtCopilotIntentsStudio.dll</HintPath>
+		<Reference Include="CrtCustomer360Mobile">
+			<HintPath>$(RelativePkgFolderPath)/CrtCustomer360Mobile/$(StandalonePackageAssemblyPath)/CrtCustomer360Mobile.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
@@ -538,6 +533,11 @@
 		</Reference>
 		<Reference Include="CrtSpecification">
 			<HintPath>$(RelativePkgFolderPath)/CrtSpecification/$(StandalonePackageAssemblyPath)/CrtSpecification.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="CrtCopilotIntentsStudio">
+			<HintPath>$(RelativePkgFolderPath)/CrtCopilotIntentsStudio/$(StandalonePackageAssemblyPath)/CrtCopilotIntentsStudio.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
