@@ -8,8 +8,25 @@
 			<Item Name="LocalizableStrings.addRecord_e34uvxq_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_u54z1zn_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_u76y6b7_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.AreaCannotBeLess.Value" Value="Area cannot be less than 100 sq m" />
+			<Item Name="LocalizableStrings.Button_8jzn7el_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.Button_a7e5xfn_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.Button_o6gbri4_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.ExpansionPanel_a96u1th_title.Value" Value="Realty Visit" />
+			<Item Name="LocalizableStrings.ExpansionPanel_iumojj5_title.Value" Value="Category In Realty" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_f47wmjc_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_wcl7411_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_aj9qnbu_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_094afli_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_smdm8cr_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.GridDetailSettingsBtn_30wn7z4_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.MenuItem_dtf663j_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.MenuItem_yymc73c_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.MultiSelectCategory_label.Value" Value="Multi-Select Category" />
 			<Item Name="LocalizableStrings.NumberInput_n3jbw1x_label.Value" Value="Number" />
+			<Item Name="LocalizableStrings.PriceCannotBeLess.Value" Value="Price cannot be less than 50.0 INR" />
 			<Item Name="LocalizableStrings.PushMeButton_caption.Value" Value="Push Me!" />
+			<Item Name="LocalizableStrings.SearchFilter_bhw1b0o_placeholder.Value" Value="Search" />
 		</Items>
 	</Group>
 </Resources>
