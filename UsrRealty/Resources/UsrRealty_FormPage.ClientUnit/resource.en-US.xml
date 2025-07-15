@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Realty form page" />
+			<Item Name="LocalizableStrings.ActionButton_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.addRecord_02ottro_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_azbl2ug_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_e34uvxq_caption.Value" Value="Add new" />
@@ -26,7 +27,9 @@
 			<Item Name="LocalizableStrings.NumberInput_n3jbw1x_label.Value" Value="Number" />
 			<Item Name="LocalizableStrings.PriceCannotBeLess.Value" Value="Price cannot be less than 50.0 INR" />
 			<Item Name="LocalizableStrings.PushMeButton_caption.Value" Value="Push Me!" />
+			<Item Name="LocalizableStrings.RunWebServiceMenuItem_caption.Value" Value="Call Max Price Web Service" />
 			<Item Name="LocalizableStrings.SearchFilter_bhw1b0o_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.StartAvgPriceProcessMenuItem_caption.Value" Value="Start Calc Average Price Process" />
 		</Items>
 	</Group>
 </Resources>
