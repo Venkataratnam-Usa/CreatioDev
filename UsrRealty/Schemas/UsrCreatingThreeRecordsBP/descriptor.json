@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "3d7a6230-4e99-4ed5-afe1-18c13d96c84c",
+    "Name": "UsrCreatingThreeRecordsBP",
+    "ModifiedOnUtc": "\/Date(1753776642000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Add Realty Visit Records",
+    "DependsOn": []
+  }
+}

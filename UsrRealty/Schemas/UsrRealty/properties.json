@@ -5,8 +5,8 @@
     "AdministratedByRecords": "False",
     "CreatedInVersion": "0.0.0.0",
     "IsSSPAvailable": "False",
-    "IsTrackChangesInDB": "False",
+    "IsTrackChangesInDB": "True",
     "IsVirtual": "False",
-    "UseLiveEditing": "False"
+    "UseLiveEditing": "True"
   }
 }

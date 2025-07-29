@@ -116,6 +116,55 @@
               }
             ],
             "BR3": "BusinessRule_af7f9a0"
+          },
+          {
+            "JI0": "Terrasoft.Core.BusinessRules.BusinessRule",
+            "UId": "8c5dc017-163b-2173-3ae0-a9ae2a7cdb7c",
+            "BR1": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.BusinessRuleCase",
+                "UId": "5f53832b-b1ad-a01a-cc37-6c2c06c6a90d",
+                "BRC1": {
+                  "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleGroupCondition",
+                  "UId": "3d272c3f-8f98-2991-dd97-cd9bdc22ff37",
+                  "BGC1": 1,
+                  "BGC2": [
+                    {
+                      "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleCondition",
+                      "UId": "b9a3506d-d93e-eceb-852f-54a1f4ceaf33",
+                      "BCO1": {
+                        "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+                        "UId": "0269243d-dba7-68f1-ddbb-c1fd6df4d7e5",
+                        "BRE1": "Float2",
+                        "BRE2": "AttributeValue",
+                        "BRX1": "PDS_UsrPrice_3sz2f5z"
+                      },
+                      "BCO3": 1
+                    }
+                  ]
+                },
+                "BRC2": [
+                  {
+                    "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionShowElement",
+                    "UId": "b1ef812b-0f17-136b-2f92-369d3db04646",
+                    "BRA4": "Comment"
+                  }
+                ]
+              }
+            ],
+            "BR2": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+                "UId": "69008c9c-0958-a9e6-4be3-89c69233ff70",
+                "BRT1": "PDS_UsrPrice_3sz2f5z"
+              },
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+                "UId": "c2d3af37-a085-214f-2101-2893a2feafaf",
+                "BRT2": 2
+              }
+            ],
+            "BR3": "BusinessRule_f47a49e"
           }
         ]
       }

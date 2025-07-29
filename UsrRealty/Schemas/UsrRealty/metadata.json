@@ -13,10 +13,12 @@
 = MetaData.Schema.EG1.BK37.A4 "bb4d6607-026b-4b27-b640-8f5c77c1e89d"
 = MetaData.Schema.EG1.BK3 []
 = MetaData.Schema.EG1.BK4 []
++ MetaData.Schema.D24 true
 = MetaData.Schema.D8 "1bab9dcf-17d5-49f8-9536-8e0064f1dce0"
 + MetaData.Schema.D29 "null"
 + MetaData.Schema.D30 "null"
 + MetaData.Schema.D31 "null"
++ MetaData.Schema.D38 true
 + MetaData.Schema.D4 "14422062-093f-42f3-b190-b8da3da728d7"
 + MetaData.Schema.D2 {
   "UId": "14422062-093f-42f3-b190-b8da3da728d7",

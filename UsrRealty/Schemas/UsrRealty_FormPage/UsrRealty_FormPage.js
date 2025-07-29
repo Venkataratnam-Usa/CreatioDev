@@ -109,6 +109,29 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 			},
 			{
 				"operation": "insert",
+				"name": "CreatingThreeRecordsMenu",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(CreatingThreeRecordsMenu_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "UsrProcess_1da936f",
+							"processRunType": "ForTheSelectedPage",
+							"saveAtProcessStart": true,
+							"showNotification": true,
+							"recordIdProcessParameterName": "RealtyIdParameter"
+						}
+					},
+					"icon": "copilot-rewrite-formal-icon"
+				},
+				"parentName": "ActionButton",
+				"propertyName": "menuItems",
+				"index": 2
+			},
+			{
+				"operation": "insert",
 				"name": "PushMeButton",
 				"values": {
 					"type": "crt.Button",
@@ -1205,7 +1228,7 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 							"MySuperValidator": {
 								"type": "usr.DGValidator",
 								"params": {
-									"minValue": 50,
+									"minValue": 1,
 									"message": "#ResourceString(PriceCannotBeLess)#"
 								}
 							}
@@ -1224,6 +1247,11 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 					"PDS_UsrComment_u1jzlsb": {
 						"modelConfig": {
 							"path": "PDS.UsrComment"
+						},
+						"validators": {
+							"required": {
+								"type": "crt.Required"
+							}
 						}
 					},
 					"PDS_UsrManager_g2a6wuw": {
@@ -1239,7 +1267,7 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 							"MySuperValidator": {
 								"type": "usr.DGValidator",
 								"params": {
-									"minValue": 10,
+									"minValue": 1,
 									"message": "#ResourceString(AreaCannotBeLess)#"
 								}
 							}
@@ -1445,6 +1473,26 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
 		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
 		handlers: /**SCHEMA_HANDLERS*/[
+						{
+        request: "crt.HandleViewModelAttributeChangeRequest",
+        /* The custom implementation of the comment field query handler. */
+        handler: async (request, next) => {
+			/* If the UsrPrice field changes, take the following steps. */
+            if (request.attributeName == 'UsrPrice' || request.attributeName == 'PDS_UsrPrice_3sz2f5z') {
+                var priceUSD = await request.$context.PDS_UsrPrice_3sz2f5z;
+                /* Check the price is greater than 5000 USD. */
+                if (priceUSD > 5000) {
+                    /* If yes, apply the required validator to the UsrComment / PDS_UsrComment_w65c7c6 attribute. */
+                    request.$context.enableAttributeValidator('PDS_UsrComment_u1jzlsb', 'required');
+                } else {
+                    /* Do not apply the required validator to the UsrComment / PDS_UsrComment_w65c7c6 attribute. */
+                    request.$context.disableAttributeValidator('PDS_UsrComment_u1jzlsb', 'required');
+                }
+            }
+            /* Call the next handler if it exists and return its result. */
+            return next?.handle(request);
+         }
+       },
 
 			{
 
@@ -1515,7 +1563,7 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 
 					// get id from type lookup type object
 
-					var typeObject = await request.$context.PDS_UsrColumn5_kvzl4fb;
+					var typeObject = await request.$context.PDS_UsrColumn4_x4hnbjp;
 
 					var typeId = "";
 
